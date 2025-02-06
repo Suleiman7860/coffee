@@ -1,178 +1,70 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Front Page -->
+    <header class="front-page">
+        <nav>
+            <div class="logo">Coffee Haven</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Coffee Haven</h1>
+            <p>Your perfect cup of coffee awaits</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </header>
 
-/* Front Page */
-.front-page {
-    background-image: url('coffee-bg.jpg'); /* Add your background image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Coffee Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Strong and bold, our classic espresso.</p>
+                <span>$3.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Espresso with steamed milk and foam.</p>
+                <span>$4.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Espresso with steamed milk and a light layer of foam.</p>
+                <span>$5.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Mocha</h3>
+                <p>Espresso with chocolate and steamed milk, topped with whipped cream.</p>
+                <span>$5.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Americano</h3>
+                <p>Espresso diluted with hot water for a lighter taste.</p>
+                <span>$3.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>Macchiato</h3>
+                <p>Espresso with a dollop of steamed milk foam.</p>
+                <span>$4.00</span>
+            </div>
+        </div>
+    </section>
 
-.front-page nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.front-page nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.front-page nav .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.front-page nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.front-page nav .nav-links a:hover {
-    text-decoration: underline;
-}
-
-.front-page .hero {
-    margin-top: 60px;
-}
-
-.front-page .hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.front-page .hero p {
-    font-size: 24px;
-    margin: 10px 0 20px;
-}
-
-.front-page .btn {
-    background-color: #6f4e37;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.front-page .btn:hover {
-    background-color: #5a3c2c;
-}
-
-/* Menu Section */
-.menu-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.menu-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-item {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.menu-item h3 {
-    font-size: 24px;
-    margin: 0 0 10px;
-}
-
-.menu-item p {
-    font-size: 16px;
-    margin: 0 0 10px;
-    color: #666;
-}
-
-.menu-item span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #6f4e37;
-}
-
-/* Footer */
-footer {
-    background-color: #6f4e37;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .front-page nav .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item {
-        width: 100%;
-    }
-}
-h1 {
-
-      color: white ;
-}
-p{
-    color:white;
-}
-body {
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/028/216/975/small/light-coffee-break-ambiance-free-photo.jpg');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    width: 100%; /* Corrected syntax */
-    height: 100vh; /* Sets height to full viewport height */
-    margin: 0; /* Removes default margin */
-}
-.menu-item {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMsBozzS5d0oiC7QzIH03pCcE80wk6YV5_sA&s'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire div */
-    background-position: center; /* Center the image */
-    padding: 20px; /* Add some padding for spacing */
-    color: white; /* Change text color for better contrast */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    margin: 10px; /* Optional: Add margin between menu items */
-}
-h3{
-  color : black;
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
